@@ -1,5 +1,10 @@
-class AddUserIdToGroup < ActiveRecord::Migration[5.0]
-  def change
-    add_column :groups, :user_id, :integer
-  end
+class CreateGroups < ActiveRecord::Migration[5.0]
+ def change
+   create_table :groups do |t|
+     t.string :title
+     t.text :description
+
+     t.timestamps
+   end
+ end
 end
