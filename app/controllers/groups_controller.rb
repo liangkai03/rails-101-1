@@ -23,9 +23,8 @@ class GroupsController < ApplicationController
     else
       render :new
     end
-  end
 
-    redirect_to groups_path
+
   end
 
   def update
